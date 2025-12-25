@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blue Magic Laundry | Free Pickup & Delivery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      text-align: center;
+    }
+
+    header {
+      background: #0a3d62;
+      color: white;
+      padding: 25px 15px;
+    }
+
+    section {
+      padding: 25px 15px;
+    }
+
+    .card {
+      background: white;
+      margin: 15px auto;
+      padding: 20px;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background: gold;
+      color: black;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    .whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    footer {
+      background: #0a3d62;
+      color: white;
+      padding: 12px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🧺 Blue Magic Laundry</h1>
+  <p>Free Pickup & Delivery | Ara Bhojpur</p>
+</header>
+
+<!-- SHOP IMAGE -->
+<section>
+  <div class="card">
+    <h2>🏪 Our Laundry Shop</h2>
+    <img src="shop.jpg" alt="Blue Magic Laundry Shop">
+    <p>Zero Mile, opposite Dadan Handi Hotel, Ara Bhojpur, Bihar</p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section>
+  <div class="card">
+    <h2>✨ Our Services</h2>
+    <p>
+      ✔ Laundry by KG<br>
+      ✔ Dry Cleaning<br>
+      ✔ Steam Iron<br>
+      ✔ Sofa Cleaning (₹350 per seat)<br>
+      ✔ Free Pickup & Delivery
+    </p>
+  </div>
+</section>
+
+<!-- PRICE LIST -->
+<section>
+  <div class="card">
+    <h2>📄 Check Our Price List</h2>
+    <p>View detailed prices for all services.</p>
+
+    <a class="btn" href="pricelist/index.html" target="_blank">
+      📄 Check Price List
+    </a>
+  </div>
+</section>
+
+<!-- GOOGLE REVIEWS -->
+<section>
+  <div class="card">
+    <h2>⭐ Google Reviews</h2>
+    <p>Trusted by our happy customers</p>
+
+    <a class="btn" target="_blank"
+       href="https://www.google.com/maps/place/Blue+Magic+Laundry/@25.5347341,84.6468504,17z">
+      ⭐ View Google Reviews
+    </a>
+
+    <a class="btn" target="_blank"
+       href="https://www.google.com/maps/place/Blue+Magic+Laundry/@25.5347341,84.6468504,17z/reviews">
+      ✍️ Write a Review
+    </a>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section>
+  <div class="card">
+    <h2>📲 Book Now</h2>
+    <a class="btn whatsapp"
+       href="https://wa.me/918877513395?text=Hello%20Blue%20Magic%20Laundry%20👋%0AI%20want%20to%20book%20laundry%20service.%0AFree%20pickup%20and%20delivery%20please."
+       target="_blank">
+      WhatsApp Booking
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2025 Blue Magic Laundry
+</footer>
+
+<!-- CHATBOT -->
+<script>
+(function(){
+  if(!window.chatbase || window.chatbase("getState")!=="initialized"){
+    window.chatbase=(...arguments)=>{
+      if(!window.chatbase.q){window.chatbase.q=[]}
+      window.chatbase.q.push(arguments)
+    };
+    window.chatbase=new Proxy(window.chatbase,{
+      get(target,prop){
+        if(prop==="q"){return target.q}
+        return(...args)=>target(prop,...args)
+      }
+    })
+  }
+  const onLoad=function(){
+    const script=document.createElement("script");
+    script.src="https://www.chatbase.co/embed.min.js";
+    script.id="AyrPBgZeULv06seUGWo2h";
+    script.domain="www.chatbase.co";
+    document.body.appendChild(script)
+  };
+  if(document.readyState==="complete"){onLoad()}
+  else{window.addEventListener("load",onLoad)}
+})();
+</script>
+
+</body>
+</html>
