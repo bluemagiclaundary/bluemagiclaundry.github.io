@@ -59,6 +59,25 @@
       padding: 12px;
       font-size: 14px;
     }
+    .offer-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffcc00;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  z-index: 9999;
+  font-size: 14px;
+}
+
+/* Push content down so it doesn’t hide header */
+body {
+  padding-top: 45px;
+}
+
   </style>
 </head>
 
@@ -168,4 +187,10 @@
 </script>
 
 </body>
+  <!-- FLOATING OFFER BAR -->
+<div class="offer-bar">
+  🎉 Flat <strong>20% OFF</strong> on Order Above RS 250. This Offer is not applied for free Pickup & Delivery.
+  🚚 Free Pickup & Delivery
+</div>
+
 </html>
